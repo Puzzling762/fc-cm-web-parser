@@ -295,12 +295,12 @@ export default function Home() {
   const [playerNamesFileContent, setPlayerNamesFileContent] = useState(null)
 
   useEffect(async() => {
-    const response = await fetch('/fifa_ng_db-meta.xml')
+    const response = await fetch('./fifa_ng_db-meta.xml')
     setDbMetaFileContent(await response.text())
   }, [])
 
   useEffect(async() => {
-    const response = await fetch('/playernames.csv')
+    const response = await fetch('./playernames.csv')
     setPlayerNamesFileContent(await response.text())
   }, [])
   
