@@ -1,6 +1,6 @@
 import { BufferReader } from '@/parser/buffer-reader';
 import xml2js from 'xml2js';
-import helpers from '@/parser/helpers'
+import * as helpers from '@/parser/helpers'
 
 const databaseHeader = '\x44\x42\x00\x08\x00\x00\x00\x00';
 
